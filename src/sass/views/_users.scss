@@ -1,0 +1,85 @@
+.userList {
+  display: flex;
+  flex-direction: row;
+  margin: auto 0;
+  justify-content: center;
+  height: 65vh;
+  @include laptop {
+    flex-direction: column;
+    margin: auto 1.5em;
+  }
+  @include tablet {
+    font-size: 12px;
+    margin: auto 1.5em;
+    height: 60vh;
+  }
+  @include mobile {
+    height: 55vh;
+  }
+
+  .icon-back-box {
+    margin-right: 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    @include laptop {
+      margin-right: 0;
+      margin-bottom: 1.2em;
+    }
+    @include mobile {
+      height: 10%;
+    }
+    svg {
+      font-size: 2.5em;
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+  .list-box {
+    height: 90%;
+
+    h1 {
+      margin-bottom: 1em;
+      font-family: $secondary-font;
+    }
+    .data-box {
+      height: 100%;
+      a {
+        font-size: 1.1em;
+        font-family: $primary-font;
+        text-decoration: none;
+        &:hover {
+          color: $primary-color;
+        }
+      }
+      .unblock-button {
+        border: none;
+        border-radius: 1em;
+        height: 1.5em;
+        color: $secodary-color;
+        width: 6em;
+        background-color: #4caf50;
+        &:hover {
+          cursor: pointer;
+          color: black;
+        }
+      }
+      .block-button {
+        border: none;
+        border-radius: 1em;
+        height: 1.5em;
+        color: $secodary-color;
+
+        width: 6em;
+        background-color: #d14141;
+        &:hover {
+          cursor: pointer;
+
+          color: black;
+        }
+      }
+    }
+  }
+}

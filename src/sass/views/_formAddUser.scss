@@ -1,0 +1,130 @@
+.form-add-user {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3em 0;
+
+  flex: 1;
+  @include tablet {
+    font-size: 12px;
+  }
+
+  .form-and-button-box {
+    display: flex;
+    align-items: flex-start;
+    @include laptop {
+      width: 70vw;
+      justify-content: center;
+    }
+    @include tablet {
+      flex-direction: column;
+    }
+    @include mobile {
+      width: 90vw;
+      margin: 1.8em 0;
+    }
+    .icon-back-box {
+      overflow: hidden;
+      svg {
+        object-fit: contain;
+        font-size: 2.5em;
+      }
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+    input {
+      height: 1.5rem;
+      border: 0;
+      outline: none;
+      background-color: transparent;
+      border-bottom: 1px solid $primary-color;
+      width: 100%;
+      @include mobile {
+        height: 3em;
+      }
+    }
+    form {
+      width: 50vw;
+      padding: 2em;
+      margin-left: 2em;
+      gap: 1.5em;
+      border-radius: 2em;
+      box-shadow: 0 0 1em $hover-color;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      height: 38em;
+      align-items: center;
+      @include laptop {
+        width: auto;
+      }
+      @include mobile {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        .form-group {
+          width: 100%;
+        }
+        .form-group-birthday {
+          width: 100%;
+        }
+        .form-group-email {
+          width: 100%;
+        }
+      }
+
+      span {
+        font-size: 0.9em;
+        font-family: $secondary-font;
+        color: red;
+      }
+
+      .form-group-image {
+        grid-column: span 3;
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        .container-img {
+          height: 9em;
+          overflow: hidden;
+          margin-bottom: 1em;
+          img {
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+          }
+          svg {
+            font-size: 6em;
+          }
+        }
+      }
+      .form-group-email {
+        grid-column: span 2;
+      }
+      .form-group-birthday {
+        grid-column: span 2;
+      }
+      .button-submit {
+        height: 2rem;
+        grid-column: span 3;
+        border: 0;
+        outline: none;
+        background-color: $primary-color;
+        border-radius: 0.5em;
+        color: $secodary-color;
+        font-family: $primary-font;
+        font-size: 1.2em;
+
+        &:hover {
+          cursor: pointer;
+          color: #000;
+        }
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
+}

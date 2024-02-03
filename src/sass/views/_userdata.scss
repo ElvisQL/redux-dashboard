@@ -1,0 +1,63 @@
+.user-main {
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+  @include tablet {
+    margin: 2em auto;
+    flex-direction: column;
+  }
+  @include mobile {
+    font-size: 14px;
+  }
+  .card-user {
+    height: fit-content;
+    border-radius: 1em;
+    box-shadow: 0 0 1em $primary-color;
+    padding: 2em;
+    @include mobile {
+      width: 80vw;
+    }
+    .img-box-user {
+      height: 15em;
+      width: 15em;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .info-box-user {
+      margin: 1em 0;
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      .label-box {
+        margin-bottom: 0.5em;
+        span {
+          font-family: $primary-font;
+          font-size: 1.1em;
+        }
+      }
+    }
+  }
+  .icon-back-box {
+    margin-right: 4em;
+    width: 2.5em;
+    height: 2.5em;
+    overflow: hidden;
+    @include tablet {
+      margin-bottom: 1em;
+    }
+    svg {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      &:hover {
+        cursor: pointer;
+        color: $primary-color;
+      }
+    }
+  }
+}
