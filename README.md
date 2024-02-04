@@ -1,46 +1,35 @@
-# Getting Started with Create React App
+# Dashboard con Redux y TypeScript
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este proyecto es un pequeño dashboard desarrollado con TypeScript y React, que utiliza Redux para el manejo del estado, Redux Thunk para realizar llamadas a la API dummyjson, y Redux Persist para almacenar y sincronizar datos con el local storage.
 
-## Available Scripts
+## Funcionalidades
 
-In the project directory, you can run:
+- **Ver Usuarios:** Muestra una lista de usuarios obtenidos de la API dummyjson.
+- **Agregar y Bloquear Usuarios:** Permite agregar usuarios a una lista de bloqueados y visualizarlos.
+- **Ver Usuarios Bloqueados:** Muestra la lista de usuarios bloqueados.
 
-### `npm start`
+## Tecnologías Utilizadas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+- **React:** Biblioteca de JavaScript para construir interfaces de usuario.
+- **Redux:** Biblioteca para el manejo del estado de la aplicación.
+- **Redux Thunk:** Middleware para manejar acciones asíncronas en Redux.
+- **Redux Persist:** Librería para persistir y sincronizar el estado de Redux en el local storage.
+- **TypeScript:** Superset de JavaScript que agrega tipos estáticos.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Instalación
 
-### `npm test`
+1. Clona este repositorio: `git clone https://github.com/tuusuario/turepo.git`
+2. Ingresa al directorio del proyecto: `cd turepo`
+3. Instala las dependencias: `npm install`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Configuración
 
-### `npm run build`
+1. Crea un archivo `.env` en la raíz del proyecto y agrega tu clave de la API dummyjson: REACT_APP_DUMMYJSON_API_KEY=your-api-key
+## Uso
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Inicia la aplicación: `npm start`
+2. Visita `http://localhost:3000` en tu navegador.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Contribuir
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+¡Siéntete libre de contribuir! Abre un problema o envía una solicitud de extracción con mejoras.
